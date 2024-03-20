@@ -48,16 +48,13 @@ def largest1BorderedSquare(grid):
         # for i in range(len(vorlist)):
         #     print(vorlist[i])
         for i in range(0, rowlen):
-            
             for j in range(0, collen):
-                
                 if grid[i][j] == 1:
                     horlist[i][j] = horlist[i][j-1] + 1
                     # if j == 0:
                         # vorlist[i][j] = vorlist[i-1][j] + 1
                     if i > 0 :
                         vorlist[i][j] = vorlist[i-1][j] + 1
-                        
                 else:
                     horlist[i][j] = 0
                     vorlist[i][j] = 0
