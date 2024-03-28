@@ -5,6 +5,29 @@ Welcome to the LeetCode Problem Solutions Repository! This repository contains s
 
 LeetCode is a popular platform for practicing coding skills, particularly for technical interviews. It features a wide range of coding problems across different domains such as algorithms, data structures, dynamic programming, and more. This repository provides solutions to problems available on LeetCode.
 
+## Concepts 
+
+### Hash Maps
+Hash maps are indexed data structures. In python, dictionaries are used to implement hash maps. Hash maps allows fast random memory access throug hash functions along with fast insertion and deletion.
+
+```
+# Default dict in python
+# defaultdict is subclass of built in class dict. It overrides one method to 
+# provide a default value for a non existent key. 
+
+temp_dict = defaultdict(int)
+print(temp_dict)
+# OUTPUT: defaultdict(int, {})
+
+temp_dict['a'] +=1   # craete a new key 'a' and increment its value by 1,
+# default value for non existent key is 0
+print(temp_dict['pear]) # output: 0
+
+temp_dict_list = defaultdict(list)
+print(temp_dict)
+# OUTPUT: defaultdict(list, {})
+```
+
 ## List of Problems
 
 Explore the repository to find solutions to the following LeetCode problems:
